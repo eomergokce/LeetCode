@@ -12,9 +12,9 @@ class SearchinRotatedSortedArray {
                 return mid;
             }
 
-            if (nums[low] <= nums[mid]) { //sol sıralıysa
+            if (nums[low] <= nums[mid]) {
 
-                if (nums[low] <= target && target <= nums[mid]) { //target buradaysa
+                if (nums[low] <= target && target <= nums[mid]) {
 
                     if (nums[mid] < target) {
                         low = mid + 1;
@@ -29,9 +29,9 @@ class SearchinRotatedSortedArray {
 
             }
 
-            else if (nums[mid] <= nums[high]) { //sağ sıralıysa
+            else if (nums[mid] <= nums[high]) {
 
-                if (nums[mid] <= target && target <= nums[high]) { //target buradaysa
+                if (nums[mid] <= target && target <= nums[high]) {
 
                     if (nums[mid] < target) {
                         low = mid + 1;
