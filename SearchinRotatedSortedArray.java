@@ -1,4 +1,5 @@
 class SearchinRotatedSortedArray {
+
     public int search(int[] nums, int target) {
 
         int low = 0;
@@ -13,9 +14,7 @@ class SearchinRotatedSortedArray {
             }
 
             if (nums[low] <= nums[mid]) {
-
                 if (nums[low] <= target && target <= nums[mid]) {
-
                     if (nums[mid] < target) {
                         low = mid + 1;
                     }
@@ -26,13 +25,10 @@ class SearchinRotatedSortedArray {
                 else {
                     low = mid + 1;
                 }
-
             }
 
             else if (nums[mid] <= nums[high]) {
-
                 if (nums[mid] <= target && target <= nums[high]) {
-
                     if (nums[mid] < target) {
                         low = mid + 1;
                     }
@@ -43,7 +39,6 @@ class SearchinRotatedSortedArray {
                 else {
                     high = mid - 1;
                 }
-
             }
 
         }

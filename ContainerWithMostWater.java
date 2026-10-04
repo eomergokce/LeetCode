@@ -1,4 +1,5 @@
 class ContainerWithMostWater {
+
     public int maxArea(int[] height) {
 
         int max=0;
@@ -23,7 +24,6 @@ class ContainerWithMostWater {
             if(temp>max){
                 max = temp;
             }
-
         }
 
         return max;

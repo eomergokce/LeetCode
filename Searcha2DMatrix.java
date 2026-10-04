@@ -1,4 +1,5 @@
 class Searcha2DMatrix {
+
     public boolean searchMatrix(int[][] matrix, int target) {
 
         int m = matrix.length;
@@ -23,6 +24,5 @@ class Searcha2DMatrix {
         }
 
         return false;
-
     }
 }
